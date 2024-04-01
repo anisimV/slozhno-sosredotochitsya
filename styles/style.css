@@ -1,13 +1,16 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   color: var(--text-color);
   background-color: var(--background-color);
   font-family: var(--font-family, monospace);
   font-size: var(--font-size);
   font-style: normal;
   line-height: 1.3;
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /* header */
@@ -16,14 +19,12 @@
   display: grid;
   grid-template-rows: 0 1fr max-content 1fr;
   position: relative;
-  background-position: center;
   align-items: center;
-  background-size: cover;
   padding: var(--padding, 10px);
-  background-image: var(--background-image);
   min-block-size: 668px;
   block-size: 100vh;
 }
+
 
 /*меню сайта ( день/авто/неон )*/
 
@@ -55,14 +56,23 @@
 
 .header__theme-menu-button_active {
   border: 1px solid var(--header-color);
+  pointer-events: none;
 }
-
+/*
 .header__theme-menu-button:hover {
-  border: 1px solid var(--hover-color);
+  border: 1px solid transparent;
+  border-color: rgba(255, 0, 112, 0.5);
+}
+*/
+
+.page.theme_auto .header__theme-menu-button:hover {
+  border: 1px solid transparent;
+  border-color: rgba(50, 49, 45, 0.5);
 }
 
 .header__theme-menu-button:focus-visible {
   border-block-end: 1px solid var(--header-color);
+  outline: none;
 }
 
 /* Заголовок */
@@ -194,7 +204,7 @@
 
 .content__link {
   text-decoration: none;
-  text-shadow: 2px 1px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .content__link:hover {
@@ -229,6 +239,7 @@
 .footer {
   display: grid;
   place-items: center;
+  position: relative;
   padding: var(--padding, 10px);
   height: 100vh;
   min-height: 668px;
@@ -245,13 +256,6 @@
 /* медиа запрос */
 
 @media (width >= 768px) {
-  :root {
-    --padding: 20px;
-  }
-
-  .header {
-    min-block-size: 1024px;
-  }
 
   .header__title {
     margin-inline-start: -10px;
@@ -319,11 +323,11 @@
   .images:nth-child(3) {
     grid-row-start: span 2;
   }
-
+/*
   .footer {
     min-block-size: 1024px;
   }
-
+*/
   .footer__text {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }

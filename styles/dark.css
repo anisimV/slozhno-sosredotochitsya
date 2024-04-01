@@ -23,6 +23,12 @@
   --shadow: #ff0070; /* цвет тени */
 }
 
+/* Стили для светлой темы */
+.page.theme_dark .header__theme-menu-button:hover {
+  border: 1px solid transparent;
+  border-color: rgba(255, 0, 112, 0.5);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --font-family: "IBM Plex mono";

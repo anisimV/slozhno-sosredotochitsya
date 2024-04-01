@@ -21,6 +21,15 @@
   --shadow: #ff0070; /* цвет тени */
 }
 
+.page.theme_light .header__icon {
+  visibility: hidden;
+}
+
+.page.theme_light .header__theme-menu-button:hover {
+  border: 1px solid transparent;
+  border-color: rgba(50, 49, 45, 0.5);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --text-color: #353430;
