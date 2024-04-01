@@ -9,4 +9,37 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --text-color: #353430; /* цвет текста светлой темы */
+  --background-image: url(../images/cover-image-light.png); /* фоновое изображение светлой темы */
+  --background-color: #fff1f7; /* фоновый цвет светлой темы */
+  --title-color: #ffc2e6; /* цвет заголовка h1 */
+  --section-title-color: #353430; /* цвет заголовков h2 */
+  --accent-color: #ff8dcb; /* цвет фона ссылок и заголовков h3 */
+  --sub-title-color: #353430; /* цвет текста заголовков h3 */
+  --hover-color: #32312d; /* цвет при наведении на кнопки */
+  --header-color: #353430; /* цвет в шапке */
+  --shadow: #ff0070; /* цвет тени */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-color: #353430;
+    --background-image: url(../images/cover-image-light.png);
+    --background-color: #fff1f7;
+    --title-color: #ffc2e6;
+    --section-title-color: #353430;
+    --accent-color: #ff8dcb;
+    --sub-title-color: #353430;
+    --hover-color: #32312d;
+    --header-color: #353430;
+    --shadow: #ff0070;
+  }
+
+  .page.theme_light .header__icon {
+    visibility: hidden;
+  }
+
+  .page.theme_auto .header__icon {
+    visibility: hidden;
+  }
 }
