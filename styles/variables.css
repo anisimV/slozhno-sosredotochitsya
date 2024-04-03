@@ -8,6 +8,7 @@
   --font-size: 18px; /* размер шрифта */
   --text-color: #f1b2ce; /* цвет текста темной темы*/
   --padding: 10px; /* отступы */
+  --padding-tablet: 20px; /* отступ для width >= 768px) */
   --background-image: url(../images/cover-image-dark.png); /* фоновое изображение темно темы*/
   --background-color: #000028; /* фоновый цвет темной темы */
   --title-color: #db00ff; /* цвет заголовка h1 */
