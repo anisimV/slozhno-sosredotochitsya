@@ -19,5 +19,5 @@
   --header-color: #ff0070; /* цвет в шапке */
   --shadow: #ff0070; /* цвет тени */
   --color-hover-dark: rgba(255, 0, 112, 0.5);
-  --color-hover-light: rgba(50, 49, 45, 0.5); 
+  --color-hover-light: rgba(50, 49, 45, 0.5);
 }

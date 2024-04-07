@@ -45,3 +45,9 @@
     --shadow: #ff0070;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .page.theme_auto .header__theme-menu-button:hover {
+    border-color: var(--color-hover-dark);
+  }
+}
